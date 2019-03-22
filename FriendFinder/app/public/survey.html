@@ -225,8 +225,7 @@
 
         
           var isValid = true;
-            if ($("name").val() === "" ||
-                $("#photo").val() === "") {
+            if ($("name").val() === "") {
               isValid = false;
             } else if ($("#q1").val() === "empty"  
                         || $("#q2").val() === "empty"
@@ -245,7 +244,6 @@
               if(isValid === true){
                  var userData = {
                          name: $("#name").val(),
-                         photo: $("#photo").val(),
                          scores: [
                                     $("#q1").val(),
                                     $("#q2").val(),
@@ -264,7 +262,6 @@
                         
                 var userData = {
                   name: $("#name").val(),
-                  photo: $("#photo").val(),
                   scores: [
                     $("#q1").val(),
                     $("#q2").val(),
